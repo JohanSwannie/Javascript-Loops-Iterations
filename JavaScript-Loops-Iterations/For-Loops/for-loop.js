@@ -66,13 +66,13 @@ const array5 = [
   },
 ];
 
-let personString = "";
+let personsString = "";
 
 for (const key in array5) {
   if (array5.hasOwnProperty.call(array5, key)) {
     const element = array5[key];
-    personString += `${element.name} is ${element.age} years old and is a ${element.career} </br>`;
+    personsString += `${element.name} is ${element.age} years old and is a ${element.career} </br>`;
   }
 }
 
-document.getElementById("for-in-loop").innerHTML = personString;
+document.getElementById("for-in-loop").innerHTML = personsString;
