@@ -76,3 +76,68 @@ for (const key in array5) {
 }
 
 document.getElementById("for-in-loop").innerHTML = personsString;
+
+// EXAMPLE 1 - Do While Loop
+
+let array6 = [25, 45, 65, 20, 25, 10];
+
+let counter = 0;
+
+sumOfFirstThree = 0;
+
+do {
+  sumOfFirstThree += array6[counter];
+  counter++;
+} while (counter < 3);
+
+document.getElementById(
+  "do-while-loop"
+).innerHTML = `The sum of the first three values in array6 is ${sumOfFirstThree}`;
+
+// Example 1 - While Loop
+
+const array7 = [
+  "Luke",
+  "Jonathan",
+  "Mary",
+  "Don",
+  "Matthew",
+  "Jason",
+  "Andrew",
+  "Pete",
+  "Anette",
+  "Jenny",
+  "Bobby",
+  "Bianca",
+  "Richard",
+  "Michael",
+  "Malcolm",
+  "Craig",
+  "Steve",
+  "Marlene",
+  "Tessa",
+  "John",
+  "Louis",
+  "Larissa",
+  "Ted",
+  "Fred",
+  "Mark",
+  "Sarah",
+];
+
+let x = 0;
+
+let invitedString = "The following guests are invited - ";
+
+while (x < array7.length) {
+  if (array7[x].length < 5) {
+    if (x === array7.length - 1) {
+      invitedString += `and ${array7[x]}`;
+    } else {
+      invitedString += `, ${array7[x]}`;
+    }
+  }
+  x++;
+}
+
+document.getElementById("while-loop").innerHTML = invitedString;
