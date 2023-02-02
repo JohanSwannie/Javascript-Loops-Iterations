@@ -127,15 +127,11 @@ const array7 = [
 
 let x = 0;
 
-let invitedString = "The following guests are invited - ";
+let invitedString = "The following guests are invited ";
 
 while (x < array7.length) {
   if (array7[x].length < 5) {
-    if (x === array7.length - 1) {
-      invitedString += `and ${array7[x]}`;
-    } else {
-      invitedString += `, ${array7[x]}`;
-    }
+    invitedString += `- ${array7[x]}`;
   }
   x++;
 }
