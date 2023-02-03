@@ -138,7 +138,7 @@ while (x < array7.length) {
 
 document.getElementById("while-loop").innerHTML = invitedString;
 
-// Example 1 - While loop with Contnue
+// Example 1 - While loop with Continue
 
 let d = 0;
 
