@@ -177,3 +177,23 @@ labelMainLoop: while (true) {
 document.getElementById(
   "while-label-break-loop"
 ).innerHTML = `The value of n is now ${n} and the value of p is now ${p}`;
+
+// EXAMPLE 1 - For each loop
+
+const array8 = [
+  "Golf",
+  "Tennis",
+  "Soccer",
+  "Swimming",
+  "Baseball",
+  "Athletics",
+  "Netball",
+];
+
+let resultString = `The different types of sport available are `;
+
+array8.forEach((item) => {
+  resultString += `- ${item}`;
+});
+
+document.getElementById("for-each-loop").innerHTML = resultString;
