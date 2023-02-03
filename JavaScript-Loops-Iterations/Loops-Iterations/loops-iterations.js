@@ -137,3 +137,43 @@ while (x < array7.length) {
 }
 
 document.getElementById("while-loop").innerHTML = invitedString;
+
+// Example 1 - While loop with Contnue
+
+let d = 0;
+
+let e = 0;
+
+let eValueString = `The new values of e is now `;
+
+while (d < 9) {
+  d++;
+  if (d === 7) {
+    continue;
+  }
+  e += d;
+  eValueString += `- ${e}`;
+}
+
+document.getElementById("while-continue-loop").innerHTML = eValueString;
+
+// Example 1 - While loop with label & break
+
+let n = 0;
+let p = 1;
+
+labelMainLoop: while (true) {
+  n += 1;
+  while (true) {
+    p += 1;
+    if (n === 3) {
+      break labelMainLoop;
+    } else if (p > 10) {
+      break;
+    }
+  }
+}
+
+document.getElementById(
+  "while-label-break-loop"
+).innerHTML = `The value of n is now ${n} and the value of p is now ${p}`;
