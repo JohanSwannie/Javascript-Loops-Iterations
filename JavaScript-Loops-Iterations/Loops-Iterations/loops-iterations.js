@@ -197,3 +197,26 @@ array8.forEach((item) => {
 });
 
 document.getElementById("for-each-loop").innerHTML = resultString;
+
+// EXAMPLE 1 - Advanced For Loops
+
+const array9 = [
+  [29, 14, 38, 30, 7, 20, 24, 12, 18, 5],
+  [40, 81, 57, 43, 50, 78, 64],
+  [98, 84, 110, 117, 100],
+];
+
+let rowAmnt = array9.length;
+
+let array9String = "";
+
+for (let x = 0; x < rowAmnt; x++) {
+  let elements = array9[x].length;
+  array9String += `Row ${x} with elements - `;
+  for (let y = 0; y < elements; y++) {
+    array9String += `${array9[x][y]} , `;
+  }
+  array9String += `</br>`;
+}
+
+document.getElementById("advanced-for-each-loop").innerHTML = array9String;
