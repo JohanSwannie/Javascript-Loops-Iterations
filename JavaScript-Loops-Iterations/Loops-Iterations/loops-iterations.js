@@ -219,4 +219,37 @@ for (let x = 0; x < rowAmnt; x++) {
   array9String += `</br>`;
 }
 
-document.getElementById("advanced-for-each-loop").innerHTML = array9String;
+document.getElementById("advanced-for-each-loop1").innerHTML = array9String;
+
+// EXAMPLE 2 - Advanced for loops
+
+const object1 = {
+  people: [
+    {
+      name: "Lewellyn",
+      age: 37,
+    },
+    {
+      name: "Hannah",
+      age: 41,
+    },
+    {
+      name: "Arthur",
+      age: 35,
+    },
+  ],
+};
+
+let persons = object1.people;
+
+let amntPersons = persons.length;
+
+let persons2String = "";
+
+for (let z = 0; z < amntPersons; z++) {
+  persons2String += `Person ${z + 1} is ${persons[z].name} and is ${
+    persons[z].age
+  } of age </br>`;
+}
+
+document.getElementById("advanced-for-each-loop2").innerHTML = persons2String;
